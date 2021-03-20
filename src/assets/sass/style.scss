@@ -1,0 +1,19 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;500&display=swap');
+
+$laptop: 1200px;
+$tablet: 900px;
+$mobile: 650px;
+
+body{
+    margin: 0;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+*, *:before, *:after{
+    box-sizing: border-box;
+}
+
+@import "blocks/header";
+@import "blocks/main";
+
+

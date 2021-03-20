@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="assets/css/style.min.css">
+    <meta name="viewport" content="width=device-width, initial scale=1">
+    <title>SASS</title>
+</head>
+<body>
+    <header class="header">
+        <img class="header__logo" src="assets/img/Logo.png" alt="">
+        
+        <div class="header__inner" id="header__inner">
+            <nav class="nav">
+                <a class="nav__link" href="#">О компании</a>
+                <a class="nav__link" href="#">Деятельность</a>
+                <a class="nav__link" href="#">Партнеры</a>
+                <a class="nav__link" href="#">Контакты</a>
+            </nav>
+            <a class="header__phone" href="tel:+74956600001">+7 (495) 660 00 01</a> 
+        </div>
+        
+        
+        <div class="language">
+            <span class="language__alpha">
+                RU
+            </span>
+            <img class="language__flag" src="assets/img/ru_flag.png">
+        </div>
+        
+         <div class="burger">
+            <img class="burger__icon" src="assets/img/burger_icon.png" onclick="toggleNav()">
+        </div>
+    </header>
+    
+    <main class="partners">    
+      
+          <div class="partners__header">
+              <div class="partners__title">
+                  Надежность подтверждена 
+                  <span class="partners__title--blue">
+                      работой с ведущими мировыми компаниями
+                  </span>
+              </div>
+              <div class="partners__slogan">
+                  Лидеры различных отраслей доверяют нам
+              </div>
+          </div>
+       
+          <div class="grid">
+             <div class="grid__item">
+                <div class="grid__title">
+                    ООО «БМВ Русланд Трейдинг»
+                </div>
+
+                <img class="grid__background" src="assets/img/BMW.jpg">
+                
+                <div class="grid__overlay" href="#">
+                    <div class="grid__text">
+                        официальный дистрибьютор BMW, MINI, Rolls Royce
+                    </div>
+                </div>
+             </div>
+             
+             <div class="grid__item">
+                <div class="grid__title">
+                    АО «Вольво Восток»
+                </div>
+
+                <img class="grid__background" src="assets/img/Volvo.jpg">
+                
+                <div class="grid__overlay" href="#">
+                    <div class="grid__text">
+                        официальный дистрибьютор  грузовой техники VOLVO  и Renault
+                    </div>
+                </div>
+             </div>
+             
+             <div class="grid__item">
+                <div class="grid__title">
+                    ООО «Тойота Мотор»
+                </div>
+
+                <img class="grid__background" src="assets/img/Lexus.jpg">
+                
+                <div class="grid__overlay" href="#">
+                    <div class="grid__text">
+                        официальный дистрибьютор  Toyota, LEXUS
+                    </div>
+                </div>
+             </div>
+             
+             <div class="grid__item">
+                <div class="grid__title">
+                    ООО «ДАФ Тракс Рус»
+                </div>
+
+                <img class="grid__background" src="assets/img/DAF.jpg">
+                
+                <div class="grid__overlay" href="#">
+                    <div class="grid__text">
+                        официальный дистрибьютор  грузовой техники DAF, Kenworth
+                    </div>
+                </div>
+             </div>
+             
+             <div class="grid__item">
+                <div class="grid__title">
+                    АО «Мерседес-Бенц РУС»
+                </div>
+
+                <img class="grid__background" src="assets/img/Mercedes.jpg">
+                
+                <div class="grid__overlay" href="#">
+                    <div class="grid__text">
+                        официальный дистрибьютор Mercedes-Benz
+                    </div>
+                </div>
+             </div>
+             
+             <div class="grid__item">
+                <div class="grid__title">
+                    ООО «Порше Руссланд» 
+                </div>
+
+                <img class="grid__background" src="assets/img/Porsche.jpg">
+                
+                <div class="grid__overlay" href="#">
+                    <div class="grid__text">
+                        официальный дистрибьютор BMW, MINI, Rolls Royce
+                    </div>
+                </div>
+             </div>
+             
+             <div class="grid__item">
+                <div class="grid__title">
+                    ООО «БМВ Русланд Трейдинг»
+                </div>
+
+                <img class="grid__background" src="assets/img/BMW.jpg">
+                
+                <div class="grid__overlay" href="#">
+                    <div class="grid__text">
+                        официальный дистрибьютор BMW, MINI, Rolls Royce
+                    </div>
+                </div>
+             </div>
+             
+             <div class="grid__item">
+                <div class="grid__title">
+                    АО «Вольво Восток»
+                </div>
+
+                <img class="grid__background" src="assets/img/Volvo.jpg">
+                
+                <div class="grid__overlay" href="#">
+                    <div class="grid__text">
+                        официальный дистрибьютор  грузовой техники VOLVO  и Renault
+                    </div>
+                </div>
+             </div>
+             
+             <div class="grid__item">
+                <div class="grid__title">
+                    ООО «Тойота Мотор»
+                </div>
+
+                <img class="grid__background" src="assets/img/Lexus.jpg">
+                
+                <div class="grid__overlay" href="#">
+                    <div class="grid__text">
+                        официальный дистрибьютор  Toyota, LEXUS
+                    </div>
+                </div>
+             </div>
+             
+             <div class="grid__item">
+                <div class="grid__title">
+                    ООО «ДАФ Тракс Рус»
+                </div>
+
+                <img class="grid__background" src="assets/img/DAF.jpg">
+                
+                <div class="grid__overlay" href="#">
+                    <div class="grid__text">
+                        официальный дистрибьютор  грузовой техники DAF, Kenworth
+                    </div>
+                </div>
+             </div>
+             
+             <div class="grid__item">
+                <div class="grid__title">
+                    АО «Мерседес-Бенц РУС»
+                </div>
+
+                <img class="grid__background" src="assets/img/Mercedes.jpg">
+                
+                <div class="grid__overlay" href="#">
+                    <div class="grid__text">
+                        официальный дистрибьютор Mercedes-Benz
+                    </div>
+                </div>
+             </div>
+             
+             
+             
+          </div>   
+        
+    </main>
+    
+    
+    <script src="assets/js/app.js"></script>
+</body>
+</html>
