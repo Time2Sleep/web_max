@@ -1,10 +1,10 @@
 .partners{
-    margin-top: 150px;
+    margin-top: 50rem;
     margin-left: 120rem;
     
-    @media (max-width: $tablet){
-        margin-top: 70px;
-        margin-left: 15px;
+    @media (max-width: $mobile){
+        margin-top: 25rem;
+        margin-left: 15rem;
     }
     
     &__header{
@@ -74,16 +74,14 @@
         
         position: relative;
         
-        &:hover .grid__overlay{
+        &:hover .grid__background{
             opacity: 1;
         }
         
         &:hover .grid__title{
-            margin-top: 52rem;
-            color: #4A4A4A;
-            
-            @media (max-width:$mobile){
-                margin-top:15rem;
+            color: white;
+            @media (min-width:$mobile){
+                transform: translateY(-25rem);
             }
         }
         
@@ -96,9 +94,9 @@
     }
     
     &__title{
-        margin: 27rem auto 0;
+        margin: 52rem auto 0;
         font-size: 20rem;
-        color: white;
+        color: #4A4A4A;
         
         transition: all 0.2s linear;
         
@@ -111,10 +109,12 @@
     &__background{
         width: 100%;
         
+        opacity: 0;
         position: absolute;
         top:0;
         left:0;
-        z-index: -2;
+        z-index: -1;
+        transition: opacity 0.2s linear;
     }
     
     &__overlay{
@@ -122,14 +122,12 @@
         height: 100%;
         
         background-color: #FAFAFA;
-        opacity: 0;
         
         position: absolute;
         top:0;
         left:0;
-        z-index: -1;
+        z-index: -2;
         
-        transition: opacity 0.2s linear;
     }
     
     &__text{
